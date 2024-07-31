@@ -3,180 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>unblocker</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f4f4f4;
-        }
-
-        .header {
-            width: 100%;
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 1.5em;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: center;
-            background-color: #555;
-            padding: 10px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .navbar button {
-            background-color: #777;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            margin: 0 5px;
-        }
-
-        .navbar button:hover {
-            background-color: #999;
-        }
-
-        .search-container {
-            margin: 20px;
-            text-align: center;
-        }
-
-        .search-container input[type="text"] {
-            padding: 10px;
-            width: 100%;
-            max-width: 600px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .search-container button {
-            padding: 10px 20px;
-            border: none;
-            background-color: #007bff;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        .search-container button:hover {
-            background-color: #0056b3;
-        }
-
-        .footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #333;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        .footer a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        .footer .credits {
-            margin-left: auto;
-        }
-
-        .footer img {
-            width: 24px;
-            height: 24px;
-            margin: 0 5px;
-        }
-
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .navbar button {
-                margin: 5px 0;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .header h1 {
-                font-size: 1.2em;
-            }
-
-            .search-container input[type="text"] {
-                width: 90%;
-            }
-
-            .search-container button {
-                width: 90%;
-            }
-
-            .footer {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .footer img {
-                width: 20px;
-                height: 20px;
-            }
-        }
-    </style>
+    <title>Advanced Search Engine</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="node.js"></script> 
 </head>
 <body>
-
-    <div class="header">
-        <h1>Unblocker by Ultrakeras</h1>
-    </div>
-
-    <div class="navbar">
-        <button>Apps</button>
-        <button>Games</button>
-        <button>Settings</button>
-    </div>
-
-    <div class="search-container">
-        <input type="text" placeholder="Search...">
-        <button>Search</button>
-    </div>
-
-    <div class="footer">
-        <div>
-            <a href="https://discord.com/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Discord_logo_2021.svg" alt="Discord">
+   <header>
+        <div class="container">
+            <h1>Advanced Search Engine by Ultrakeras</h1>
+            <nav class="navbar">
+                <button class="nav-button">Apps</button>
+                <button class="nav-button">Games</button>
+                <button class="nav-button">Settings</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Type your query...">
+            <button id="search-button">Search</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <a href="https://discord.com" target="_blank">
+                <img src="https://static-00.iconduck.com/assets.00/discord-icon-2048x2048-o5mluhz2.png" alt="Discord">
             </a>
-            <a href="https://github.com/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/github-mark.svg" alt="GitHub">
+            <a href="https://github.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/256/25/25231.png" alt="GitHub">
             </a>
         </div>
-        <div class="credits">
-            <button>Credits</button>
+        <div class="footer-right">
+            <button class="credits-button">Credits</button>
         </div>
-    </div>
-
+    </footer>
+    <!-- Add this script to create dots -->
+    <script src="script.js"></script>
 </body>
 </html>
